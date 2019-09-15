@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>My Cv</title>
+      <link rel = "stylesheet" type="text/css" href="cvstyle.css">
+  </head>
+  <body>
+    <div style="width: 842px; height:auto; margin-left: 15%; margin-right: 15%; background: cyan; padding-left: 14px; padding-right: 14px; padding-top:4px; ">
+      <a href="form.html"><button id="editbtn"><blink>Edit CV</blink></button></a> <!--button for transitioning back to the form-->
+      <center><div id="cvheaader">
+          <p id="name"><strong>LILIAN MBITHE MWIKALI</strong></p>
+          <p id="address">PMB CT3, CANTONMENTS, ACCRA</p>
+          <p id="phone"> +233 (0)261500530 / +254 (0)742666184</p>
+          <p id="email">lilian.mwikali@ashesi.edu.gh / mbithemwikali@gmail.com</p>
+          <p><a href="https://www.linkedin.com/in/mbithe-mwikali-287407129/">https://www.linkedin.com/in/mbithe-mwikali-287407129/</a></p>
+      </div></center>
+      <h5>EDUCATION</h5>
+          <li><strong> Ashesi University<span style="float: right;">Berekuso, Eastern Region Ghana</span></strong></li>
+          <p><strong>Computer Science<span style="float: right;">Expected date of graduation: June 2020</span></strong></p>
+          <li><strong>Maryhill Girls High School <span style="float: right;">Thika, Kenya</span></strong></li>
+          <p style="float: right;"><strong>2012 - Nov 2015</strong></p><br>
+      <h5>ACHIEVEMENTS/AWARDS</h5>
+        <p><strong>* Google Africa Certification Scholarship for Cloud Engineer track via Andela (ALC)<span style="float: right;">June 2019 - present</span></strong></p>
+        <p><strong>* Facebook Software Engineering Mentorship Program<span style="float: right;">May 2019 - present</span></strong></p>
+        <p><strong>* MasterCard Foundation Scholars Program Scholarship (MCF),</strong> Ashesi University<strong><span style="float: right;">Aug 2016 - June 2020 </span></strong></p>
+        <p><strong>* Akili Dada scholarship,</strong> Maryhill Girls' High School<span style="float: right;"><strong> 2014 - 2015 </strong></span></p>
+      <h5>WORK EXPERIENCE</h5>
+        <p><strong>Internship with Xavier Media Group, Ghana <span style="float: right;">May 2019 - July 2019 </span></strong></p>
+          <li>I interned as a programming intern. My tasks included working on projects. The main language I used was PHP. </li>
+        <p><strong>Tutor for Computer Programming for CS <span style="float: right;">Feb 2019 - May 2019</span></strong></p>
+          <li>I coach python to freshmen who are taking Programming for CS course by helping them understand concepts and solve problems</li>
+        <p><strong>Drama Queens Ghana <span style="float: right;"> 2018 - present </span></strong></p>
+          <li>Consent facilitator</li>
+        <p><strong>Internship with Infonet Technologies, Kenya <span style="float: right;">June 2018 - Aug 2018 </span></strong></p>
+          <li>Worked as web developer </li>
+          <li>Did Research work </li>
+        <p><strong>Internship with AkiliDada – Nairobi, Kenya  <span style="float: right;">Jan 2016 - July 2016 </span></strong></p>
+          <li>Participated in mentoring students in various girls’ high schools in Nairobi </li>
+          <li>Took lessons and earned a 2 certificates for emotional intelligence</li>
+          <li>Coached high school students in doing innovative scientific projects </li>
+          <li>Volunteered for community services such as cleaning up Nairobi National park under Mazingira Safi Initiative </li>
+        <p><strong>PACE Maker International (Volunteer) – Nairobi, Kenya<span style="float: right;"> Jan 2016 - July 2016 </span></strong></p>
+          <li>Taught class 5 students Science, Kiswahili, Mathematics and Christian Education </li>
+          <li>Helped Class 8 candidates prepare for their KCPE examination by coaching them in Mathematics </li>
+          <li>Initiated a club about creating awareness about drugs and also campaigning against drug abuse. </li>
+          <li>Gained first Aid Skills and was certified by Kenya Red Cross Society. </li>
+
+      <h5>CO-CURRIULAR ACTIVITIES</h5>
+        <p><strong>BasketBall,</strong> Ashesi University<strong><span style="float: right;">Jan 2017 - Present</span></strong></p>
+        <li>An active Member of Ashesi University College Basketball team </li>
+        <p><strong>African Technology Forum CLUB,</strong> Ashesi University<span style="float: right;"><strong>Jan 2017 - November 2017</strong></span></p>
+        <li>An active member of ATF club</li>
+        <p><strong>YLMP Program,</strong> DataBank<span style="float: right;"><strong> Oct 2017 - Aug 2018 </strong></span></p>
+        <li>Junior mentor</li>
+        <p><strong>Ashesi ACTORS GUILD CLUB <span style="float: right;"> 2017 - present </span></strong></p>
+        <li>Active club member</li>
+
+      <h5>OTHER SKILLS</h5>
+        <li>Advanced Computer skills (PHP, HTML, JavaScript, java, C++, and Python,git) </li>
+        <li>Strong interpersonal and organizational skills</li>
+        <li>Creative writing, and reading skills </li>
+        <li>communication skills </li>
+        <li>Basic Computer skills (Microsoft Word, Excel, PowerPoint, Outlook, wordpress) </li>
+        <li>Fluent in English, Kiswahili and Kikamba</li>
+
+      <h5>REFERENCES</h5>
+        <p>Available upon request: <strong>KCSE</strong> - Kenya Certificate of Secondary Education result slip. </p>
+        <p><strong>University Academic transcript</strong></p>
+        <li><strong>Foundation Scholars Program Scholarship (MCF)</strong> - is an initiative to educate and prepare young people – especially from Africa – to lead change and make a positive social impact in their communities </li>
+        <li><strong>MCF</strong> - is an international, award-winning leadership incubator cultivating transformative leadership in a generation of young African women. </li>
+    </div>
+
+    <!-- Change fullname, email, address, and phoe number based on what was filled in the form -->
+    <script>
+      var name=localStorage.getItem("name").toUpperCase();
+      var mail=localStorage.getItem("mail").toLowerCase();
+      var phone=localStorage.getItem("phone");
+      var address=localStorage.getItem("address").toUpperCase();
+      
+      //Edit the CV
+      document.getElementById("name").innerHTML = name.bold();
+      document.getElementById("email").innerHTML = mail.bold();
+      document.getElementById("phone").innerHTML = phone.bold();
+      document.getElementById("address").innerHTML = address.bold();
+
+
+  </script>  
+  </body>
+</html>

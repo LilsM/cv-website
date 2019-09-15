@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>basics details form</title>
+        <link rel = "stylesheet" type="text/css" href="cvstyle.css"> <!--link to styling css file-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> <!--Jquery CDN-->
+
+    </head>
+    <body>
+            <div id="myform">
+            <button id="gotocv">View CV</button> <!--button for transitioning to the CV without editing its details-->
+            <form id="form_id" name="form_id">
+                <center><h3>CV Edit Form</h3></center>
+                <p id="forminstru"><em>Please fill the form below to edit CV details</em></p>
+                <p id="mailvalidationinfo"></p>
+                <p id="namevalidationinfo"></p>
+                <p id="phonevalidationinfo"></p>
+                <label>Full Name: </label>
+                <input type="text" id="flname" placeholder="type your full name..."><br><br>
+                <label>Email: </label>
+                <input type="text" id="email" placeholder="type your email..."><br><br>
+                <label>Address: </label>
+                <input type="numbers" id="address" placeholder="type your address..."><br><br>
+                <label>Phone: </label>
+                <input type="text" id="pnumber" placeholder="type your phone number..."><br><br>
+                <center><button type="button" id="submitbtn">Submit</button></center><br><br>
+            </form>
+            </div>
+
+        <!-- script for form validation -->
+        <script src="form.js"></script>
+
+    </body>
+</html>
